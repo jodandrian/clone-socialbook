@@ -1,0 +1,9 @@
+// import base modules
+@use "scss/base/typegraphy";
+@use "scss/base/reset";
+// import components module
+@use "scss/components/nav";
+// // import layout module
+// @use "scss/layout/grid";
+// import utils modules
+@use "scss/utils/utils";

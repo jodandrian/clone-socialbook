@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- start nav -->
+    <nav class="nav">
+        <div class="nav__left">
+            <a href=""><img src="assets/images/logo.png" alt="logo"></a>
+            <ul>
+                <li><img src="assets/images/notification.png" alt="icon"></li>
+                <li><img src="assets/images/inbox.png" alt="icon"></li>
+                <li><img src="assets/images/video.png" alt="icon"></li>
+            </ul>
+        </div>
+        <div class="nav__right">
+            <div class="nav__right__search-box">
+                <img src="assets/images/search.png" alt="search">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="nav__right__user-icon nav__right__user-icon--online" onclick="settingsMenuToggle()">
+                <img src="assets/images/profile-pic.png " alt="user icon">
+            </div>
+        </div>
+        <!-- start nav__dropdown -->
+        <div class="nav__dropdown">
+            <div id="btn-dark">
+                <span></span>
+            </div>
+            <div class="nav__dropdown__menu">
+                <div class="user-profile">
+                    <img src="assets/images/profile-pic.png" alt="user profile">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="assets/images/feedback.png" alt="feedback">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="assets/images/setting.png" class="settings-icon" alt="settings icon">
+                    <a href="#">Settings and Privacy<img src="assets/images/arrow.png" width="10px" alt=""></a>
+                </div>
+                <div class="settings-links">
+                    <img src="assets/images/help.png" class="settings-icon" alt="settings icon">
+                    <a href="#">Help and Support<img src="assets/images/arrow.png" width="10px" alt=""></a>
+                </div>
+                <div class="settings-links">
+                    <img src="assets/images/display.png" class="settings-icon" alt="settings icon">
+                    <a href="#">Display and Accessibility<img src="assets/images/arrow.png" width="10px" alt=""></a>
+                </div>
+                <div class="settings-links">
+                    <img src="assets/images/logout.png" class="settings-icon" alt="settings icon">
+                    <a href="#">Logout<img src="assets/images/arrow.png" width="10px" alt=""></a>
+                </div>
+            </div>
+            <!-- end nav__dropdown__menu -->
+        </div>
+        <!-- end nav__dropdown -->
+    </nav>
+    <!-- end nav -->
+
+    <script src="app.js"></script>
+</body>
+
+</html>

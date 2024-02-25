@@ -1,0 +1,133 @@
+@use "../abstracts" as *;
+.nav {
+    width: 100%;
+    padding: .5rem 5%;
+    background: var(--nav-color);
+    @include flexBox(space-between, center);
+    @include position(sticky, 0, null, null, null);
+    z-index: 100;
+    
+    &__left {
+        @include flexBox(null, center);
+        a {
+            img {
+                width: 16rem;
+                margin-right: 4.5rem;
+            }
+        }
+        ul {
+            li {
+                display: inline-block;
+                list-style: none;
+                img {
+                    width: 2.8rem;
+                    height: 2.8rem;
+                    margin: 0 1.5rem;
+                }
+            }
+        }
+    }
+    &__right {
+        @include flexBox(null, center);
+        &__search-box {
+            background: #efefef;
+            width: 35rem;
+            border-radius: 2rem;
+            @include flexBox(null, center);
+            padding: 0 15px;
+            img {
+                width: 1.8rem;
+            }
+            input {
+                width: 100%;
+                background: transparent;
+                padding: 1rem;
+                outline: none;
+                border: none;
+            }
+        }
+        &__user-icon {
+            margin-left: 3rem;
+            &--online {
+                position: relative;
+                &::after {
+                    content: '';
+                    width: .7rem;
+                    height: .7rem;
+                    border: 2px solid #fff;
+                    border-radius: 50%;
+                    background: #41db51;
+                    @include position(absolute, 0, 0, null, null);
+                }
+            }
+            img {
+                width: 4rem;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+    &__dropdown {
+        position: absolute;
+        width: 90%;
+        max-width: 31rem;
+        background: --bg-color;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        overflow: hidden;
+        top: 108%;
+        right: 5%;
+        max-height: 0;
+        transition: max-height 0.3s;
+        &__menu {
+            padding: 20px;
+            font-size: 1.2rem;
+            .user-profile {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 4.5rem;
+                    border-radius: 50%;
+                    margin-right: 1rem;
+                }
+                p {
+                    margin-bottom: -5px;
+                    font-weight: 500;
+                    color: #626262;
+                }
+                a {
+                    font-size: 12px;
+                    color: #1876f2;
+                    text-decoration: none;
+                }
+            }
+            hr {
+                border: 0;
+                height: 1px;
+                background: #9a9a9a;
+                margin: 15px 0;
+            }
+            .settings-links {
+                display: flex;
+                align-items: center;
+                margin: 15px 0;
+                .settings-icon {
+                    width: 38px;
+                    margin-right: 10px;
+                    border-radius: 50%;
+                }
+                a {
+                    display: flex;
+                    flex: 1;
+                    align-items: center;
+                    justify-content: space-between;
+                    text-decoration: none;
+                    color: #626262;
+                }
+            }
+        }
+        &-height {
+            max-height: 450px;
+        }
+    }
+}

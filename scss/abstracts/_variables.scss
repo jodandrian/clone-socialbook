@@ -1,0 +1,19 @@
+$gutter: 1.5rem;
+$maxWidth: 120rem;
+// xlg: 1200px above
+// lg:  1200px - 993px
+// md:  992px - 769px
+// sm:  768px - 480px
+// xsm: 480px - 0
+$breakPoints: ("xlg": 1200px, "lg": 1200px, "md": 992px, "sm": 768px, "xsm": 480px);
+
+:root{
+    --body-color: #efefef;
+    --nav-color: #1876f2;
+    --bg-color: #fff;
+}
+.dark-theme {
+    --body-color: #0a0a0a;
+    --nav-color: #000;
+    --bg-color: #000;
+}

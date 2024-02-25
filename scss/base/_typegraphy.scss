@@ -1,0 +1,11 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    background: var(--body-color);
+    transition: background 0.3s;
+}

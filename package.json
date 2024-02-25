@@ -1,0 +1,14 @@
+{
+    "name": "SocialBook-sass",
+    "version": "1.0.0",
+    "description": "clone FaceBook project with html, sass and JavaScript",
+    "main": "index.js",
+    "scripts": {
+        "compile-sass": "sass app.scss app.css --watch --no-source-map"
+    },
+    "author": "joda ndrian",
+    "license": "ISC",
+    "devDependencies": {
+        "sass": "^1.63.6"
+    }
+}
